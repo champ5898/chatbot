@@ -1,0 +1,124 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?"
+        ],
+        "responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison."
+        ]
+      },
+      {
+        "tag": "quilt",
+        "patterns": [
+          "What is quilt ?",
+          "quilt",
+          "p2p"
+        ],
+        "responses": [
+          "Quilt is a social protocol: We provide a social element to the blockchain space, allowing users to freely socialise over web3 while conducting crypto and NFT transactions across multiple chains."
+        ]
+      },
+      {
+        "tag": "friend",
+        "patterns": [
+          "How do I add a friend ?",
+          "add friend",
+          "friend",
+          "friendlist"
+        ],
+        "responses": [
+          "Currently, all you need is the wallet address of the user you wish to add, copy the wallet of address, select the add friends button, click on add new friend, paste the address."
+        ]
+      },
+      {
+        "tag": "transaction",
+        "patterns": [
+          "Are my transactions protected ?",
+          "protection",
+          "privacy",
+          "security"
+        ],
+        "responses": [
+          "We use an encryption algorithm that ensures every transaction are well protected."
+        ]
+      },
+      {
+        "tag": "features",
+        "patterns": [
+          "What features do you offer ?",
+          "features",
+          "offer",
+          "offered"
+          
+        ],
+        "responses": [
+          "We offer a secured messaging application on Web3, but if you want to know more about our features, how about taking a look at our roadmap"
+        ]
+      },
+      {
+        "tag": "gas",
+        "patterns": [
+          "Do I need to pay to generate a private key ?",
+          "gas fees",
+          "gas",
+          "paid",
+          "private key",
+          "key"
+
+        ],
+        "responses": [
+          "Yes u have to pay gas fees to generate private key based on blockchain"
+        ]
+      },
+      {
+        "tag": "social",
+        "patterns": [
+          "What makes you different from social media companies like Facebook ?",
+          "social",
+          "media",
+          "protocol"
+          
+        ],
+        "responses": [
+          "We are built on blockchain, so we do not hold your information, and we provide a social experience on the crypto space across multiple chains."
+        ]
+      }
+    ]
+  }
