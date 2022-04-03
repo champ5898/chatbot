@@ -4,3 +4,5 @@ __pycache__
 bot.py
 model.py
 x.py
+news.py
+newsapi.py

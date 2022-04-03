@@ -1,6 +1,6 @@
 
 import random
-import numpy as np
+
 import json
 from nltk_utils import tokenize, stem, bag_of_words
 

@@ -1,7 +1,7 @@
 from asyncio.windows_events import NULL
 import string
 import random
-import numpy as np
+
 from train import xy, ignore_words
 from nltk import tokenize, stem
 
@@ -33,7 +33,7 @@ def get_tag(sentence):
     else:
         tag=freq(ask_tag)
         return tag
-    print(tag)
+    # print(tag)
 # Greetings=[]
 # greeting_response=[]
 # def greet(sentence):
