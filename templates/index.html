@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatbot</title>
-</head>
-<body>
-<div class="container">
-    <div class="chatbox">
-        <div class="chatbox__support">
-            <div class="chatbox__header">
-                <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
-                </div>
-                <div class="chatbox__content--header">
-                    <h4 class="chatbox__heading--header">Chat support</h4>
-                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
-                </div>
-            </div>
-            <div class="chatbox__messages">
-                <div></div>
-            </div>
-            <div class="chatbox__footer">
-                <input type="text" placeholder="Write a message...">
-                <button class="chatbox__send--footer send__button">Send</button>
-            </div>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename = 'app.js') }}"
+    ></script>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}"
+  </head>
+  <body>
+    <form class="grid" action="/" method="POST">
+      <center>
+        <div class="form">
+          <textarea
+            class="form-control"
+            rows="1"
+            name="msg"
+            placeholder="Type your message..."
+          ></textarea>
         </div>
-        <div class="chatbox__button">
-            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
-        </div>
-    </div>
-</div>
 
-    <script>
-        $SCRIPT_ROOT = {{ request.script_root|tojson }};
-    </script>
-    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
-
-</body>
+        <button type="Submit" class="send">Send</button>
+        
+      </center>
+    </form>
+<form class="clear" action="{{ url_for('clear') }}" method="POST">
+    <button type="submit" name="clear" >Delete </button>
+  </form>
+      
+      
+    
+    <div class="box-body">
+      <div class="direct-chat-messages">
+          <div class="direct-chat-msg">
+            {% for query in result %}
+              <div class="direct-chat-info clearfix"> <span class="direct-chat-name pull-left"></span> <span class="direct-chat-timestamp pull-right">{{query.date}}</span> </div> <img class="direct-chat-img" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="message user image">
+              <div class="direct-chat-text"> 
+                
+                You: {{query.msg}}
+              </div>
+                <div class="direct-chat-text"> 
+                Claire: {{query.res}}              
+                <hr>
+               </div>
+               {% endfor %}
+               
+          </div>
+      </div>
+      
+  </body>
 </html>
