@@ -26,7 +26,7 @@ def home():
     if request.method == 'POST':
         ask = request.form['msg']
         response = get_response(request.form['msg'])
-        SpeakText(response)
+        # SpeakText(response)
         conv = Messages(msg=ask, res=response)
 
         db.session.add(conv)

@@ -1,18 +1,18 @@
-from win32com.client import Dispatch
-from gtts import gTTS
-import os
+# from win32com.client import Dispatch
+# from gtts import gTTS
+# import os
 # import speech_recognition as sr
 import pyttsx3
-def speak(str):
+# def speak(str):
     
 
-    speak = Dispatch("SAPI.SpVoice")
-    speak.Speak(str)
+#     speak = Dispatch("SAPI.SpVoice")
+#     speak.Speak(str)
 
 
-def tts(txt):
-    output=gTTS(text=txt, lang='en', slow=False)
-    output.save("voice.mp3")
+# def tts(txt):
+#     output=gTTS(text=txt, lang='en', slow=False)
+#     output.save("voice.mp3")
 
 def SpeakText(command):
      

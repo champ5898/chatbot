@@ -37,7 +37,8 @@
         "patterns": [
           "Tell me a joke!",
           "Tell me something funny!",
-          "Do you know a joke?"
+          "Do you know a joke?",
+          "joke"
         ],
         "responses": [
           "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
@@ -100,7 +101,8 @@
           "gas",
           "paid",
           "private key",
-          "key"
+          "key",
+          "fees"
 
         ],
         "responses": [
